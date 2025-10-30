@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mosquito Tap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #202020, #000);
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      touch-action: none;
+      user-select: none;
+      color: white;
+      font-family: sans-serif;
+    }
+    #score {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      font-weight: bold;
+    }
+    canvas {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="score">Счёт: 0</div>
+  <canvas id="gameCanvas"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
